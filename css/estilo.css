@@ -2,59 +2,60 @@ body{
    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
-#header{
-   text-align: left;
-   border: 1px solid #CCC;
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
-#logo{
-   margin-left: 30px;
-   width: 130px;
-   padding: 10px 0;
+.navcima img{
+   height: 100px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
-
-.container-fluid{
-   background-color: #25282e;
-}
-
-/* Botões */
-.btn{
+.navbar a{
    text-decoration: none;
-   background-color: #25282e;
-   color: #D9D9D9;
-   padding: 7px 18px;
-   border-radius: 0;
+   color: #353535;   
+   font-weight: bolder;
 }
 
-.btn:hover{
-   background-color: #333;
-   color: #fff;
-}   
-
-.btn-login{   
-   text-align: right;
-}
-
-.btn a{
-   color: #fff;
+.navcima a{
    text-decoration: none;
-   
+   color: #353535; 
+   padding: 10px 20px 10px 20px;  
+   background-color: #fff;
+   font-weight: bolder;
+   border-radius: 20px;
+}  
+
+.buttons {
+   display: flex;
+   gap: 20px;
 }
 
+.navcima {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #353535;
+}
 
-/* NAVBAR */
+.navbar{
+   display: flex;
+   list-style: none;
+   background-color: #D9D9D9;
+   align-items: center; 
+   padding-top: 20px;
+   padding-bottom: 20px;
+   justify-content: space-around;
+   width: 100%;
+}
+
 .navbar ul{
-   color: #fff;
-   list-style-type: none;
-}
-
-
-.navbar ul li{
-   display: inline;
-}
-
-.links-topo{
-   border: 1px solid floralwhite;
-   text-align: center;
+   list-style: none;
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+   width: fit-content;
 }
