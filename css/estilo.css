@@ -8,6 +8,8 @@ body{
    box-sizing: border-box;
 }
 
+/* Inicio da Navbar */
+
 .navcima img{
    height: 100px;
    margin-top: 20px;
@@ -58,4 +60,18 @@ body{
    gap: 30px;
    justify-content: space-between;
    width: fit-content;
+}
+/* Fim da Navbar */
+
+
+
+
+/* footer */
+
+footer {
+   background-color: #353535;
+}
+footer p {
+   color: #D9D9D9;
+   text-align: center;
 }
