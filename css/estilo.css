@@ -40,7 +40,8 @@ body{
    display: flex;
    justify-content: space-around;
    align-items: center;
-   background-color: #353535;
+   /* background-color: #353535; */
+   background-color: #000;
 }
 
 .navbar{
@@ -69,7 +70,11 @@ body{
 /* footer */
 
 footer {
-   background-color: #353535;
+   /* background-color: #353535; */
+   background-color: #000;
+   justify-content: center;
+   display: flex;
+   align-items: center;
 }
 footer .copy {
    color: #D9D9D9;
@@ -91,4 +96,9 @@ footer a {
 footer a:hover {
 color: aqua;
 
+}
+
+footer li{
+   display: inline;
+   list-style: none;
 }
