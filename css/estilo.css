@@ -71,7 +71,23 @@ body{
 footer {
    background-color: #353535;
 }
-footer p {
+footer .copy {
    color: #D9D9D9;
    text-align: center;
+   padding: 10px;
+}
+
+footer .pesquisas {
+   padding: 10px;
+}
+
+footer a {
+   color: #D9D9D9;
+   text-decoration: none;
+   padding: 10px;
+}
+
+footer a:hover {
+color: aqua;
+
 }
