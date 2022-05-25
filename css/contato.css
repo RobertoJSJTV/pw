@@ -86,6 +86,7 @@ body {
   
   footer {
     /* background-color: #353535; */
+    padding-top: 20px;
     background-color: #000;
     justify-content: center;
     display: flex;
@@ -114,8 +115,17 @@ body {
   footer a:hover {
     color: aqua;
   }
+
+  footer ul{
+    display: flex;
+    justify-content: center;
+  }
   
   footer li {
     display: inline;
     list-style: none;
   }  
+
+.footer{
+  display: block;
+}

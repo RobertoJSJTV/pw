@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -81,6 +82,19 @@ ul {
   height: 550px;
 }
 
+.box-inner {
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  box-shadow: 0 0 2px rgb(0 0 0 / 15%);
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 /* Fim da Main*/
 
 /* footer */
@@ -131,3 +145,4 @@ footer li {
 .footer{
   display: block;
 }
+
