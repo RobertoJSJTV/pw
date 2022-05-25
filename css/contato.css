@@ -76,14 +76,37 @@ body {
     background-position: center;
     height: 550px;
   }
+  h1{
+    font-size: 29px;
+    font-weight: 30;
+    margin-left: 30px;
+  }
+  .box-inner {
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 15%);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
   #topo-index{
       background: transparent;
   }
-  
+
+  main{
+    margin-bottom: 30px;
+  }
   /* Fim da Main*/
   
   /* footer */
   
+
   footer {
     /* background-color: #353535; */
     padding-top: 20px;
@@ -91,9 +114,6 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
   }
   footer .copy {
     color: #d9d9d9;
