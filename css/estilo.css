@@ -91,6 +91,9 @@ footer {
   justify-content: center;
   display: flex;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 footer .copy {
   color: #d9d9d9;
