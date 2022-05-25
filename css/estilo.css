@@ -66,6 +66,10 @@ ul {
   justify-content: space-between;
   width: fit-content;
 }
+#topo-index{
+  background: transparent;
+}
+
 /* Fim da Navbar */
 
 /* Inicio da Main */
