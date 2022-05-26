@@ -92,24 +92,25 @@ body {
     /* background-color: #353535; */
     padding-top: 20px;
     background-color: #000;
-    justify-content: center;
+    /* justify-content: center;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: absolute; */
     width: 100%;
     bottom: 0px;
     color: #fff;
     font-size: 14px;
+    height: 100%;
   }
 
 
-.footer{
-    /* display: flex;
+/* .footer{
+     display: flex;
     align-items: center;
-    justify-content: space-around; */
- }
+    justify-content: space-around; 
+ } */
 
-  footer .copy {
+  /* footer .copy {
     color: #d9d9d9;
     text-align: center;
     padding: 10px;
@@ -118,7 +119,7 @@ body {
   footer .pesquisas {
     color: violet;
     padding: 10px;
-  }
+  } */
   
   footer a {
     color: #d9d9d9;
@@ -129,11 +130,16 @@ body {
     color: aqua;
   }
   
-  footer ul{
+  /* footer ul{
     display: flex;
     justify-content: center;
-  }
+  } */
   
+  footer ul{
+    display: block;
+}
+  
+
   footer li {
     display: flex;
     list-style: none;
@@ -141,10 +147,16 @@ body {
 
   .column{
       height: 100%;
-      float: left;
-      width: 25%;
+      float: inline-start;
+      width: 20%;
       display: flex;
       justify-content: center;
+  }
+
+  .column.unique{
+    border-top: 1px solid #6e49c4;
+    padding: 20px 0;
+    width: 100%;
   }
 
   .row{
@@ -159,10 +171,6 @@ body {
     display: table;
     clear: both;
   }
-  
-  footer ul{
-      display: block;
-  }
 
 
   footer i{
@@ -170,10 +178,19 @@ body {
     color: aquamarine;
   }
   
+.social-media i{
+  padding-right: 30px;
+}
+
   .social-media{
       padding: 20px 0;
   }
 
   .social-media i{
       font-size: 25px;
+  }
+
+  .btn-app{
+    padding-top: 10px;
+    width: 120px;
   }
