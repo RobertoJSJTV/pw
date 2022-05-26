@@ -1,0 +1,179 @@
+body {
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* Inicio da Navbar */
+  
+  .navcima img {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #353535;
+    font-weight: bolder;
+  }
+  
+  .navcima a {
+    text-decoration: none;
+    color: #353535;
+    padding: 10px 20px 10px 20px;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navcima {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #353535; */
+    background-color: #000;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    background-color: #d9d9d9;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: fit-content;
+  }
+  #topo-index{
+    background: transparent;
+  }
+  
+  /* Fim da Navbar */
+
+
+
+  /* Inicio da Main */
+  .main-container {
+    background: url("../img/apto.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+  }
+  
+  /* Fim da Main*/
+  
+
+  /* footer */
+
+  footer {
+    /* background-color: #353535; */
+    padding-top: 20px;
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+
+.footer{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+ }
+
+  footer .copy {
+    color: #d9d9d9;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer .pesquisas {
+    color: violet;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: #d9d9d9;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: aqua;
+  }
+  
+  footer ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer li {
+    display: flex;
+    list-style: none;
+  }
+
+  .column{
+      height: 100%;
+      float: left;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .row{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer ul{
+      display: block;
+  }
+
+
+  footer i{
+    padding-right: 5px;
+    color: aquamarine;
+  }
+  
+  .social-media{
+      padding: 20px 0;
+  }
+
+  .social-media i{
+      font-size: 25px;
+  }
