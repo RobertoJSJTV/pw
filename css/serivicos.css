@@ -194,3 +194,49 @@ body {
     padding-top: 10px;
     width: 120px;
   }
+
+  /* Ajustes para Responsividade */
+  @media only screen and (max-width: 600px) {
+
+    .row{
+      display: inline-block;
+      justify-content: space-around;
+    }
+    .column{
+      display: block;
+      /* display: flex; */
+      padding-left: 30px;
+      /* justify-content: center; */
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .social-media{
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+
+    /* Não sei se deixo isso aqui... */
+    /* li{ 
+       justify-content: center;
+    } */
+    .column.app{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+
+    .column.unique p{
+      text-align: center;
+    }
+
+  @media only screen and (max-width: 1090px) and (min-width: 601px) {
+    footer{
+      background-color: #6e49c4;
+    }
+
+  }
+
