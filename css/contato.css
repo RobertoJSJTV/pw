@@ -34,6 +34,12 @@ input {
     color: #353535;
     font-weight: bolder;
   }
+
+  .navbar a:hover {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bolder;
+  }
   
   .navcima a {
     text-decoration: none;
@@ -81,7 +87,7 @@ input {
   .navbar {
     display: flex;
     list-style: none;
-    background-color: #353535;
+    background-color: #000;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -110,10 +116,11 @@ input {
     background-position: center;
     height: 550px;
   }
-  .texto{
+  #texto{
     font-size: 29px;
     font-weight: 30;
     margin-left: 30px;
+    padding: 10px;
   }
   .box-inner {
     background: rgba(255,255,255,0.8);
@@ -123,6 +130,8 @@ input {
     width: 100%;
     margin-bottom: 20px;
   }
+
+
 
   #topo-index{
       background: transparent;
