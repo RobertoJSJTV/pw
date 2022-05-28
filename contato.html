@@ -57,7 +57,7 @@
 
 <main>
     <h1 id="texto">Precisa de ajuda? <br> Entre em contato conosco</h1>    
-    <form class="col-md-8 col-xl-9">
+    <form class="col-md-12 col-xl-12">
       <div class="row">
           <fieldset class="col-lg-6">
               <legend>Para entrar em contato conosco, Preencha os Campo a baixo</legend>
@@ -79,34 +79,33 @@
                   <textarea name="msg" class="form-control" id="msg" placeholder="Digite sua Mensagem" required></textarea>
               </div>   
 
-              <div class="form-group custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="mensagens" value="sim" checked>
-                  <label class="custom-control-label" for="mensagens">
-                      Quero receber Noticías sobre a Adimo Imóveis
-                  </label>
-
-              </div>
-          </fieldset>
-
-          <fieldset class="col-lg-6">
               <div class="form-group">
-                  <label for="assunto">Assunto</label>
-                  <select class="custom-select" id="assunto">
-                    <option disabled selected>Sugestões / Reclamações</option>
-                      <option value="alugar">Quero alugar</option>
-                      <option value="comprar">Quero Comprar</option>
-                      <option value="condominio">Adimo Condominio</option>
-                      <option value="locacao">Adiministração de locação</option>
-                      <option value="atendimento">Atendimento ruim</option>
-                      <option value="negocio">Negócio mal feito</option>
-                  </select>
-              </div>
+                <label for="assunto">Assunto</label>
+                <select class="custom-select" id="assunto">
+                  <option disabled selected>Sugestões / Reclamações</option>
+                    <option value="alugar">Quero alugar</option>
+                    <option value="comprar">Quero Comprar</option>
+                    <option value="condominio">Adimo Condominio</option>
+                    <option value="locacao">Adiministração de locação</option>
+                    <option value="atendimento">Atendimento ruim</option>
+                    <option value="negocio">Negócio mal feito</option>
+                </select>
+            </div>
+
+            <div class="form-group custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="mensagens" value="sim" checked>
+              <label class="custom-control-label" for="mensagens">
+                  Quero receber Noticías sobre a Adimo Imóveis
+              </label>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <span class="oi-thumb-up"></span>
+            Confirmar dados   
+        </button>
           </fieldset>
 
-          <button type="submit" class="btn btn-primary">
-              <span class="oi-thumb-up"></span>
-              Confirmar dados   
-          </button>
+          
+          
 
       </div>
   </form>
