@@ -10,64 +10,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="icon" href="img/logo-3-claro_Prancheta_1.png">
-    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/open-iconic-bootstrap.css"> -->
     <title>Contato</title>
-
-        <script>
-          function validaEmail(){
-            if (!document.fCadastro.txtEmail.value.includes("@")) {
-            alert("E-mail Inválido, Por favor Digite um e-mail Válido");
-            }
-          }
-        </script>
 
 </head>
 <body>
 
   <!-- INICIO HEADER -->
 
-    <header>
-
-        <!-- NAVBAR -->
-      <nav class="navbar">
-            <a href="index.html" id="topo-index">
-              <img src="img/logo-03-roxo.svg" alt="Adimo imóveis logo" id="logo" />
-            </a>
-            <ul class="links-menu">
-              <li>
-                <a href="contato.html">Contatos</a>
-              </li>
-              <li>
-                <a href="localizacao.html">Localização</a>
-              </li>
-              <li>
-                <a href="sobre.html">Sobre</a>
-              </li>
-              <li>
-                <a href="servicos.html">Serviços</a>
-              </li>
-            </ul>
-            <div class="buttons">
-              <a class="register" href="cadastro.html">Registrar</a>
-              <a class="login" href="cadastro.html">Logar</a>
-            </div>
-      </nav>
-      <!-- FIM NAVBAR -->
-</header>   
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/logo-03-cinza.svg" alt="Adimo imóveis logo" id="logo" />
+      </a>
+      <div class="buttons">
+        <a class="register" href="cadastro.html">Registrar</a>
+        <a class="login" href="cadastro.html">Logar</a>
+      </div>
+    </nav>
+    <nav class="navbar-menu">
+      <ul class="links-menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contato.html">Contatos</a>
+        </li>
+        <li>
+          <a href="localizacao.html">Localização</a>
+        </li>
+        <li>
+          <a href="servicos.html">Serviços</a>
+        </li>
+        <li>
+          <a href="sobre.html">Sobre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- FIM HEADER -->
 
   <!-- MAIN INICIO -->
 
 <main>
-    <h1 id="texto">Entre em contato conosco</h1>
-    <form action="fCadastro">
-      <label>Nome</label><br>
-      <input type="text" name="txtNome"><br>
-      <label>E-mail</label><br>
-      <input type="text" name="txtEmail"><br><br>
-      <input type="button" name="btEmail" value="Validar" onclick="validaEmail()">
-    </form>
+    <h1 id="texto">Precisa de ajuda? <br> Entre em contato conosco</h1>    
+    <form class="col-md-8 col-xl-9">
+      <div class="row">
+          <fieldset class="col-lg-6">
+              <legend>Para entrar em contato conosco, Preencha os Campo a baixo</legend>
+              <div class="form-group">
+                  <label for="Nome">Nome Completo</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Fulano de tal" name="nome" autofocus required>
+              </div>
+
+
+
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
+              </div>
+
+
+              <div class="form-group">
+                  <label for="msg">Mensagem</label>
+                  <textarea name="msg" class="form-control" id="msg" placeholder="Digite sua Mensagem" required></textarea>
+              </div>   
+
+              <div class="form-group custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="mensagens" value="sim" checked>
+                  <label class="custom-control-label" for="mensagens">
+                      Quero receber Noticías sobre a Adimo Imóveis
+                  </label>
+
+              </div>
+          </fieldset>
+
+          <fieldset class="col-lg-6">
+              <div class="form-group">
+                  <label for="assunto">Assunto</label>
+                  <select class="custom-select" id="assunto">
+                    <option disabled selected>Sugestões / Reclamações</option>
+                      <option value="alugar">Quero alugar</option>
+                      <option value="comprar">Quero Comprar</option>
+                      <option value="condominio">Adimo Condominio</option>
+                      <option value="locacao">Adiministração de locação</option>
+                      <option value="atendimento">Atendimento ruim</option>
+                      <option value="negocio">Negócio mal feito</option>
+                  </select>
+              </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">
+              <span class="oi-thumb-up"></span>
+              Confirmar dados   
+          </button>
+
+      </div>
+  </form>
 </main>
 
   <!-- MAIN FIM -->
