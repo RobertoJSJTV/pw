@@ -60,7 +60,7 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #dddddb;
   }
   
   [tabindex="-1"]:focus:not(:focus-visible) {
@@ -160,7 +160,7 @@
   
   a:hover {
     color: #0056b3;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:not([href]) {
@@ -4726,6 +4726,7 @@
   .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
     color: #fff;
   }
+
   
   .card {
     position: relative;

@@ -77,6 +77,7 @@ input {
   }
   
   .navbar-menu {
+    padding-top: 10px;
     display: flex;
     list-style: none;
     background-color: #ffffff;
