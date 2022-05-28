@@ -10,12 +10,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="icon" href="img/logo-3-claro_Prancheta_1.png">
+    
     <title>Contato</title>
+
+        <script>
+          function validaEmail(){
+            if (!document.fCadastro.txtEmail.value.includes("@")) {
+            alert("E-mail Inválido, Por favor Digite um e-mail Válido");
+            }
+          }
+        </script>
+
 </head>
 <body>
+
+  <!-- INICIO HEADER -->
+
     <header>
 
-        <!-- Navbar -->
+        <!-- NAVBAR -->
       <nav class="navbar">
             <a href="index.html" id="topo-index">
               <img src="img/logo-03-roxo.svg" alt="Adimo imóveis logo" id="logo" />
@@ -30,34 +43,36 @@
               <li>
                 <a href="sobre.html">Sobre</a>
               </li>
+              <li>
+                <a href="servicos.html">Serviços</a>
+              </li>
             </ul>
             <div class="buttons">
               <a class="register" href="cadastro.html">Registrar</a>
               <a class="login" href="cadastro.html">Logar</a>
             </div>
       </nav>
+      <!-- FIM NAVBAR -->
 </header>   
+
+  <!-- FIM HEADER -->
+
+  <!-- MAIN INICIO -->
 
 <main>
     <h1 id="texto">Entre em contato conosco</h1>
-    <div id="box-inner">
-        <div class="row">
-            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-                <form class="form-contact" name="form-contact" method="POST" novalidate="novalidate"><div><div class="div-fsv contact-fsv" id="fsv-oek2z6kcuzg"><input type="text" name="fsv" placeholder="Não preencha"><input name="fsdv" type="hidden"></div><script type="text/javascript">
-                    (function(){
-                        var div = document.getElementById('fsv-oek2z6kcuzg');
-                        var fsdv =  document.createElement('input');
-                        fsdv.setAttribute('name', 'fsdv');
-                        fsdv.setAttribute('type', 'hidden');
-                        window.setTimeout(function() {
-                            div.appendChild(fsdv);
-                        }, 5000 );
-                    })();
-                </script></div><div class="form-group"><input id="form-contact-name-field" type="text" maxlength="40" name="name" class="form-control required" placeholder="Nome *"></div><div class="form-group"><input type="tel" maxlength="15" name="phone_number" class="form-control cell" placeholder="Telefone" id="phone_number"></div><div class="form-group"><input type="email" maxlength="60" name="email" class="form-control required" placeholder="E-mail *" id="email"></div><div class="form-group"><textarea rows="4" name="comment" class="form-control required" placeholder="Mensagem *" id="comment"></textarea></div><input type="hidden" name="widget_name" value="form-contact"><div class="form-group"><div class="g-recaptcha" id="form-contact-captcha" data-callback="recaptchaSuccessCallback" data-error-callback="recaptchaErrorCallback"></div><span class="recaptcha-error hidden">Campo obrigatório</span></div><button type="submit" class="btn btn-md btn-success"><i class="fa fa-envelope"></i> Enviar</button></form>
-            </div>
-        </div>
-    </div>
+    <form action="fCadastro">
+      <label>Nome</label><br>
+      <input type="text" name="txtNome"><br>
+      <label>E-mail</label><br>
+      <input type="text" name="txtEmail"><br><br>
+      <input type="button" name="btEmail" value="Validar" onclick="validaEmail()">
+    </form>
 </main>
+
+  <!-- MAIN FIM -->
+
+  <!-- FOOTER INICIO -->
 
 <footer class="footer">
     <div class="row">
@@ -101,7 +116,7 @@
           <li><i class="bi bi-whatsapp"></i>(11) 99999-4444</li>
           <li><i class="bi bi-envelope-fill"></i>contato@adimoimoveis.com.br</li>
           <li class="social-media">
-            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/Adimo-imoveis-108006935260056/" target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter"></i></a>
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -115,16 +130,15 @@
           <li><a href="https://apps.apple.com" target="_blank"><img src="img/disponivel-na-app-store-botao-2.png" class="btn-app"></a></li>
         </ul>
       </div>
-
-
     </div>
      <div class="row">
       <div class="column unique">
          <p>© 2022 - Adimo imóveis Serviços Imobiliários LDTA CRECI 33362-J - Todos os direitos reservados</p>
       </div> 
-    </div>
-  
-      
+    </div>      
   </footer>
+
+  <!-- FOOTER FIM -->
+
 </body>
 </html>
