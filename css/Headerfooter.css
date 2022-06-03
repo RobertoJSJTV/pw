@@ -307,6 +307,8 @@ input {
 
   /* footer */
 
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
   footer {
     /* background-color: #353535; */
     padding-top: 20px;
