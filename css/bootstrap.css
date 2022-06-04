@@ -1181,7 +1181,7 @@
       max-width: 91.666667%;
     }
     .col-md-12 {
-      margin: 30px;
+      margin: auto;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%;
