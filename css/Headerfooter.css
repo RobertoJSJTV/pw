@@ -438,9 +438,9 @@ input {
 
 
     /* Não sei se deixo isso aqui... */
-    /* li{ 
+     /* li{ 
        justify-content: center;
-    } */
+    }  */
     .column.app{
         display: flex;
         align-items: center;

@@ -34,4 +34,9 @@
   }
 
   
+@media (min-width: 768px){
+.col-md-12.colx-12 {
+  margin: 0;
+  }
+}
   /* Fim da Main*/
