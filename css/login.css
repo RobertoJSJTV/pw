@@ -1,9 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+  }
+
 body{
     font-family: "Trebuchet MS", "Helvetica", sans-serif;
     background: rgb(80,45,120);
     background: linear-gradient(90deg, rgba(80,45,120,1) 0%, rgba(97,169,189,1) 100%);
     overflow-x: hidden;
 }
+
+.navbar-menu {
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #353535;
+    font-weight: bolder;
+  }
+
+  .navbar-menu a:hover {
+    color: aqua;
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    width: fit-content;
+    color: var(--primary-color);
+    flex-wrap: wrap;
+  }
+  
+  .navbar-menu ul li a {
+    color: rgb(49, 49, 49);
+  }
+
+
+
+
 
 .container {
     width: 400px;
@@ -12,7 +58,7 @@ body{
     -webkit-border-radius: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 50px;
     text-align: center;
 }
 
