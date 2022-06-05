@@ -1,11 +1,13 @@
 body{
     font-family: "Trebuchet MS", "Helvetica", sans-serif;
-    background: #643d87 url(../login/fundo.jpg) no-repeat top center;
+    background: rgb(80,45,120);
+    background: linear-gradient(90deg, rgba(80,45,120,1) 0%, rgba(97,169,189,1) 100%);
+    overflow-x: hidden;
 }
 
 .container {
     width: 400px;
-    height: 300px;
+    height: 385px;
     background-color: rgba(255, 255, 255, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -15,10 +17,9 @@ body{
 }
 
 .container img {
-    width: 120px;
-    height: 120px;
+    height: 70%;
     margin-top: -60px;
-    margin-bottom: 30px;
+    margin-bottom: auto;
 }
 
 input{
@@ -34,21 +35,21 @@ input{
 }
 
 input.email {
-    background-image: url(../login/icone-usuario.png);
+    background-image: url(../img/icone-usuario.png);
 }
 
 input.senha {
-    background-image: url(../login/icone-cadeado.png);
+    background-image: url(../img/icone-cadeado.png);
 }
 
 input.submit{
     color: #fff;
-    background-color: #f79300;
-    border: 2px solid #db7d00;
+    background-color: #3941a0;
+    border: 2px solid #1c2477;
     padding: 5px 20px;
     height: 45px;
     width: 90%;
-    background: linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #3941a0, #1c2477);
 }
 
 
