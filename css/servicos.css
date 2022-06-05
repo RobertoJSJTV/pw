@@ -1,58 +1,54 @@
-  /* Texto Sobre nossos Serviços */
-  .about-services{
-    background-color: #d9d9d9;
-  }
+/* Texto Sobre nossos Serviços */
+.about-services {
+  background-color: #d9d9d9;
+}
 
+.services {
+  display: flex;
+  align-items: center;
+}
 
-  .services{
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid var(--primary-color);
+}
+
+.content i {
+  font-size: 60px;
+}
+
+.content > * {
+  flex: 1 1 100%;
+}
+
+.content h2 {
+  margin: 16px 0;
+}
+
+.content p {
+  font-size: 17px;
+}
+
+.content a {
+  margin: 20px 0;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.content a:hover {
+  background: var(--secondary-color);
+}
+
+/* Ajuste Mobile cards */
+@media (max-width: 900px) {
+  .services {
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
-
-  .content{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid var(--primary-color);
-  }
-
-  .content i{
-    font-size: 60px;
-  }
-
-  .content  > *{
-    flex: 1 1 100%;
-  }
-
-
-  .content h2{
-    margin: 16px 0;
-  }
-
-  .content p{
-    font-size: 17px;
-
-  }
-
-  .content a{
-    margin: 20px 0;
-    background: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: 15px 0;
-  }
-
-  .content a:hover{
-    background: var(--secondary-color);
-  }
-
-
-  /* Ajuste Mobile cards */
-  @media(max-width: 900px){
-    .services{
-      display: flex;
-      flex-direction: column;
-    }
-  }
+}
