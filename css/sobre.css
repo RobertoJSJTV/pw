@@ -1,4 +1,5 @@
 body{
+    background: #FFF;
     font-size: 17px;
 }
 
@@ -56,20 +57,24 @@ body{
 .institutional h1{
     text-transform: uppercase;
  color: #FFF;
- font-size: calc(1em + 1vw); 
+ font-size: calc(1em + 1vw);
+ padding: 30px;
 }
 
 
 
 /* Texto Sobre */
 .about-us-paragraph{
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 
 .about-us-paragraph h3{
     color: #3941a0;
     margin-top: 30px;
+    margin-left: auto;
 }
 
 .about-us-paragraph p{
@@ -86,8 +91,7 @@ body{
 
 
 .cards{
-    /* background-color: #FFF;
-    color: #3941a0; */
+
     background-color: #3941a0;
     color: #FFF;
     padding-top: 0;
@@ -95,6 +99,7 @@ body{
 }
 
 .cards h3{
+    padding-top: 20px;
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
@@ -140,6 +145,15 @@ body{
     margin: 16px 0;
   }
 
+  /* Imagem no Final */
+  .down-image{
+    max-width: 1200px;
+    background-image: url(../img/city-2-cropped.jpg);
+    background-size: cover;
+    height: 200px; 
+    margin-bottom: 50px;
+
+  }
 
 
   /* Ajuste Mobile cards */
