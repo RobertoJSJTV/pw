@@ -32,7 +32,9 @@
   main{
     margin-bottom: 30px;
   }
-
+  #assunto {
+    cursor: pointer;
+  }
   
 @media (min-width: 768px){
 .col-md-12.colx-12 {
