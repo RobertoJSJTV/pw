@@ -1,0 +1,184 @@
+body{
+    font-size: 17px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+  }
+
+.navbar{
+    position: sticky;
+    top: 0;
+
+}
+
+
+.paragraph-logo{
+    padding-left: 20px;
+    max-width: 300px;
+    height: auto;
+    
+}
+
+
+
+
+.container {
+    background-color: #FFF;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+} 
+
+
+/* Imagem + Texto Sobre */
+.institutional{
+    height: 300px;
+    background-image: url(../img/about-us-appartment-shadow.png);   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-paragraph{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.institutional h1{
+    text-transform: uppercase;
+ color: #FFF;
+ font-size: calc(1em + 1vw); 
+}
+
+
+
+/* Texto Sobre */
+.about-us-paragraph{
+    
+}
+
+
+.about-us-paragraph h3{
+    color: #3941a0;
+    margin-top: 30px;
+}
+
+.about-us-paragraph p{
+    margin-top: 10px;
+}
+
+
+.about-us-paragraph h3{
+    text-transform: uppercase;
+}
+
+/* Missão Visão e Valores */
+  /* Texto Sobre nossos Serviços */
+
+
+.cards{
+    /* background-color: #FFF;
+    color: #3941a0; */
+    background-color: #3941a0;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cards h3{
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+ .about-services{
+    text-align: center;
+    background-color: #d9d9d9;
+  }
+
+
+  .services{
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .content h2{
+      margin: 0;
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+  }
+
+  .content i{
+    font-size: 80px;    
+  }
+
+  .content  > *{
+    flex: 1 1 100%;
+  }
+
+
+  .content h2{
+    margin: 16px 0;
+  }
+
+
+
+  /* Ajuste Mobile cards */
+  @media(max-width: 900px){
+    .services{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* Fim MSV */
+
+    /* @media (min-width: 576px) {
+        .container {
+            width: 540px;
+        }
+    }
+    @media (min-width: 768px) {
+        .container {
+            width: 720px;
+        }
+    }
+    @media (min-width: 992px) {
+        .container {
+            width: 960px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            width: 1140px;
+        }
+    } */
