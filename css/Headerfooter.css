@@ -147,7 +147,7 @@ input {
   }
   
   footer a:hover {
-    color: var(--secondary-color);
+    color: #b49af3;
   }
   
   /* footer ul{
@@ -223,9 +223,6 @@ input {
     }
     .column{
       display: block;
-      /* display: flex; */
-      padding-left: 30px;
-      /* justify-content: center; */
       margin-bottom: 30px;
       width: 100%;
     }
@@ -235,11 +232,15 @@ input {
       padding-bottom: 0;
     }
 
+    .social-media i{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
 
     /* Não sei se deixo isso aqui... */
-     /* li{ 
+      li{ 
        justify-content: center;
-    }  */
+    }  
     .column.app{
         display: flex;
         align-items: center;
@@ -253,20 +254,21 @@ input {
     }
 
   @media only screen and (max-width: 1090px) and (min-width: 771px) {
-    /* footer{
-      background-color: #6e49c4;
-    } */
-
-
+     footer{
+      padding: 10px;
+    } 
     .column{
       width: 100%;
+    }
+
+    .social-media i{
+      padding-right: 10px;
+      padding-left: 10px;
     }
 
     .column > *{
       flex: 1 1 100%;
     }  
-  
-    
 
   }
 

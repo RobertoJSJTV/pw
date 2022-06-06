@@ -62,6 +62,25 @@ body{
 }
 
 
+/* Adimo Logos: 1997 - 2022 */
+figure{
+    display: inline-block;
+    justify-content: space-between;
+    width: 300px;
+    /* background-color: #d9d9d9; */
+    padding-right: 20px;
+    margin-left: 30px;
+}
+figcaption{
+    padding-left: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+figure img{
+    padding: 0;
+}
+
 
 /* Texto Sobre */
 .about-us-paragraph{
