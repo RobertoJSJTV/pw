@@ -23,7 +23,7 @@ h1{
 .bairro{
   text-align: center;
   font-size: 20px;
-  padding: 10px;
+  padding-bottom: 5px;
 }
 .bairro2{
     font-size: 20px;
@@ -33,12 +33,13 @@ h1{
 
 .imagem {
   text-align: end;
-  padding-right: 25px;
-  padding-bottom: 20px;
+  
 }
 
-.titularidade {
-  font-size: 30px;
+.titularidade p {
+  font-size: 1.5rem;
+  border: 2px solid red;
+  position: absolute;
 }
 
 
