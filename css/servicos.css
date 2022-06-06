@@ -12,10 +12,9 @@
     background-color: #d9d9d9;
   }
 
-
-  .services{
-    display: flex;
-    align-items: center;
+  .txt-solucoes{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .content{
@@ -51,11 +50,8 @@
     color: white;
     text-decoration: none;
     padding: 15px 0;
-  }
-
-  .content a:hover{
-    background: var(--secondary-color);
-  }
+    font-weight: 600;
+    }
 
 
   /* Ajuste Mobile cards */
@@ -78,10 +74,9 @@
 
   .container a{
     color: var(--primary-color);
+    transition: .2s;
   }
-  .container a:hover{
-    color: var(--secondary-color);
-  }
+  
 
 
 
@@ -93,7 +88,7 @@
 
   .services{
     display: flex;
-    align-items: center;
+    align-items: inherit;
   }
 
   .content{
@@ -143,3 +138,40 @@
       flex-direction: column;
     }
   }
+
+  /* Sessão Outros Serviços */
+
+
+  
+.other-services h2{
+  font-size: 25px;
+}
+
+.other-services ul{
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.other-services ul li{
+  display: inline-flex;
+  align-items: center;
+}
+
+.other-services a{
+  box-sizing: border-box;
+  padding: 10px 5px;
+  background-color: rgb(215, 223, 223);
+  margin: 5px;
+  font-weight: 900;
+  transition: .2s;
+}
+
+
+
+.other-services a:hover{
+  color: #5661d8;
+  background-color: rgb(252, 252, 252);
+
+}
