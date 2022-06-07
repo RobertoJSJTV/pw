@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #3941a0;
+  --primary-color-light: rgba(57, 65, 160, 0.5);
 }
 a {
   text-decoration: none;
@@ -107,17 +108,45 @@ input {
 
 /*Cards dos imóveis*/
 .container-cards {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 30px;
-  min-width: 100%;
-  align-items: center;
-  align-content: flex-end;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  padding: 0 50px;
+  gap: 20px;
 }
 
 .cards img {
-  height: 150px;
+  width: 100%;
+}
+
+.cards {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--primary-color-light);
+}
+
+.card-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.card-information {
+  padding: 16px;
+}
+
+.card-type {
+  padding: 5px 10px;
+  color: #fff;
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 42px;
+  transform: rotate(-90deg);
+  left: -42.7px;
 }
 
 .container-cards-title h1 {
@@ -139,6 +168,10 @@ input {
     width: 90vw;
     padding: 15px 2vw;
   }
+  .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 679px) {
@@ -152,6 +185,10 @@ input {
     flex-direction: column;
     width: fit-content;
     gap: 20px;
+  }
+
+  .container-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .type-search {
