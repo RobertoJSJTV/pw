@@ -7,8 +7,34 @@
     background-position: center;
     height: 550px;
   }
+
+  .parallax{
+    background-image: url(../img/site-fundo-1.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  h1.titulo-pagina {
+    padding-top: 90px;
+    line-height: 115%;
+    font-size: 7vh;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    overflow-wrap: break-word;
+}
+h2.sub-titulo-pagina {
+  line-height: 120%;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
   #texto{
-    font-family: Roboto,Open Sans;
+    font-family: Roboto, Open Sans;
     font-size: 39px;
     font-weight: 30;
     margin-left: 50px;
