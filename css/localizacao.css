@@ -63,6 +63,9 @@ h1,h2{
   font-size: 25px;
   margin: 30px;
 }
+.order{
+padding-bottom: 40px;
+}
 
 @media(max-width: 900px){
   .imagem{
