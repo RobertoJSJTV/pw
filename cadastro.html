@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="icon" href="img/logo-03-claro.svg" />
@@ -33,6 +34,9 @@
     <div class="container">
         <img src="img/login-animate.svg" alt="perfil">
         <form action="">
+            <div>
+              <input class="name" type="name" name="name" id="name" placeholder="Registre seu nome">
+          </div>
              <div>
                 <input class="email" type="text" name="email" id="email" placeholder="Registre um e-mail">
              </div>
@@ -40,7 +44,9 @@
                   <input class="senha" type="password" name="senha" id="senha" placeholder="Registre sua senha">
              </div>
             <div>
-                <input class="submit" type="submit" name="enviar" value="Registrar">
+                <input class="submit" type="submit" name="enviar" value="Registrar" onclick="cadastrar()">
+                <br>Já tem uma conta? <a href="login.html">Entrar</a>
+                <button onclick="exibir()"></button>
             </div>
         </form>
     </div>
