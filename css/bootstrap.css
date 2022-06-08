@@ -311,6 +311,7 @@
     line-height: inherit;
     color: inherit;
     white-space: normal;
+    padding-top: 10px;
   }
   
   progress {
