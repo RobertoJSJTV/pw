@@ -8,6 +8,10 @@
     height: 550px;
   }
 
+  ul.links-menu{
+    margin: 0;
+  }
+
   .parallax{
     background-image: url(../img/site-fundo-1.jpg);
     height: 40vh;

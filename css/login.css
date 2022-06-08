@@ -44,18 +44,19 @@ body{
 
 .container {
     width: 400px;
-    height: 385px;
+    height: 395px;
     background-color: rgba(255, 255, 255, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .container img {
     height: 70%;
-    margin-top: -60px;
+    margin-top: -99px;
     margin-bottom: auto;
 }
 
@@ -72,7 +73,7 @@ input{
     background-position: 10px;
 }
 
-input.email {
+input.name {
     background-image: url(../img/icone-usuario.png);
 }
 
@@ -89,10 +90,23 @@ input.submit{
     height: 45px;
     width: 80%;
 }
+.dont-have-account p
+{
+  color: #ffffff;
+  font-size: 19px;
+}
 
+.dont-have-account a
+{
+  font-size: 19px;
+  color: #1c2477;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-
-
+.dont-have-account a:hover{
+  color: #3941a0;
+}
 
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
