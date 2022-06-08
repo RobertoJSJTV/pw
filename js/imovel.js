@@ -1,7 +1,19 @@
-var banners = ["../img/casa-sem-preocupacao-imagem-01.png", "../img/casa2.jpg","../img/apto2.jpg"];
-var bannerAtual = 0;
-function trocaBanner() {
-    bannerAtual = (bannerAtual + 1) % 3;
-    document.querySelector('.banner-destaque img').src = banners[bannerAtual];
+const imgs = document.querySelector('.img select a');
+const imgBtns = [... imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) =>{
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').getElementsByClassName.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
-setInterval(trocaBanner, 3000);
+
+window.addEventListener('resize',slideImage);
