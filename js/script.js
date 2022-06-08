@@ -1,55 +1,53 @@
-
-// Verifca se está logado
-
-window.onload = function(){
-
-  // if (typeof(localStorage.email) !="undefined"){
-    if(localStorage.logado === 'true'){ 
-    document.getElementById('registrar').text = localStorage.email;
-    document.getElementById('logar').text = "Sair";
-  }else{
-  //  alert('Não Tem E-mail')
-  }
-
-  // if (logado == true){
-  //   document.getElementById('registrar').text = localStorage.email;
-  //   document.getElementById('logar').text = "Sair";
-  // }
-
-
-}
-
-
 function validaEmail() {
   if (!document.fCadastro.txtEmail.value.includes("@")) {
     alert("E-mail Inválido, Por favor Digite um e-mail Válido");
   }
 }
 
+// Ao carregar a página verifica se está logado
+window.onload = function(){
+    if(localStorage.logado === 'true'){ 
+    document.getElementById('registrar').text = localStorage.email;
+    document.getElementById('logar').text = "Sair";
+  }else{
+  //  alert('Não está logado')
+  }
+}
 
-var cadastrar = function (){
+
+
+// Atribui os Valores do formulário ao Local Storage
+var cadastrar = function(){
   successCadastro();
   localStorage.setItem('nome', document.getElementById('name').value);
   localStorage.setItem('email', document.getElementById('email').value);
   localStorage.setItem('senha', document.getElementById('senha').value);
   localStorage.setItem(logado, false);
+
 }
 
+function successCadastro(){
+  alert('Usuário Cadastrado! Faça Login com seu E-mail e Senha!');
+  window.location.href = "index.html";
+}
 
+//[Modo Logar] Se não estiver logado, redireciona pra página de login
+//[Modo Sair] Se estiver Logado, desloga
 var logar = function(){
   if (document.getElementById('logar').text === 'Sair'){
-    alert ('Tchau')
-    window.localStorage.removeItem('nome')
-    window.localStorage.removeItem('email')
-    window.localStorage.removeItem('senha')
-    localStorage.logado = false;
-    location.reload();
+    
+    if (confirm('Deseja fazer logoff desta Conta?') == true){
+      localStorage.logado = false;
+      location.reload();
+    }
   
   }else{
     window.location.href = "login.html";
   }
-
 }
+
+
+
 
   var fazerLogin = function(){
   if (document.getElementById('email').value === localStorage.email &&
@@ -68,13 +66,7 @@ var logar = function(){
 
 
 
-function successCadastro(){
-  var r = confirm('Usuário Cadastrado! Faça Login com seu E-mail e Senha!');
-  if (r == true){
-    //Deveria Voltar Pra Index Esse Lixo
-    window.location.href = "index.html";
-  }
-}
+
 
 
 function exibir(){

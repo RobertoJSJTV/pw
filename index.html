@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS Bootstrap -->
-
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/Headerfooter.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link
@@ -24,8 +24,8 @@
           <img src="img/logo-03-cinza.svg" alt="Adimo imóveis logo" id="logo" />
         </a>
         <div class="buttons">
-          <a class="register" href="cadastro.html">Registrar</a>
-          <a class="login" href="cadastro.html">Logar</a>
+          <a class="register" id="registrar" href="cadastro.html">Registrar</a>
+          <a class="login" id="logar" href="#" onclick="logar()">Logar</a>
         </div>
       </nav>
       <nav class="navbar-menu">
@@ -81,6 +81,7 @@
             </form>
           </div>
         </div>
+      </div>
         <div class="container about-home">
           <h1>Um texto qualquer</h1>
           <p>
@@ -141,7 +142,6 @@
             </div>
           </div>
         </div>
-      </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
