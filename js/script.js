@@ -18,18 +18,18 @@ window.onload = function(){
 
 // Atribui os Valores do formulário ao Local Storage
 var cadastrar = function(){
-  successCadastro();
   localStorage.setItem('nome', document.getElementById('name').value);
   localStorage.setItem('email', document.getElementById('email').value);
   localStorage.setItem('senha', document.getElementById('senha').value);
-  localStorage.setItem(logado, false);
-
+  //localStorage.setItem(logado, false);
+  successCadastro();
 }
 
 function successCadastro(){
-  alert('Usuário Cadastrado! Faça Login com seu E-mail e Senha!');
-  window.location.href = "index.html";
+  alert('Seja Bem Vindo '+ localStorage.nome + '! Faça Login com seu E-mail e Senha!');
+  redirect();
 }
+
 
 //[Modo Logar] Se não estiver logado, redireciona pra página de login
 //[Modo Sair] Se estiver Logado, desloga
@@ -45,34 +45,22 @@ var logar = function(){
     window.location.href = "login.html";
   }
 }
-
-
-
-
   var fazerLogin = function(){
   if (document.getElementById('email').value === localStorage.email &&
   document.getElementById('senha').value === localStorage.senha
   ){
-     alert('Login Sucess')
-     localStorage.logado = true;
+    alert('Bem Vindo, ' + localStorage.nome);
+    localStorage.logado = true;
+    redirect();
+  
   }else{
-    alert('E-mail ou Senha incorreta')
+    alert('E-mail ou Senha incorreta');
     localStorage.logado = false;
   }
+
+  return false;
 }
 
-
-
-
-
-
-
-
-
-function exibir(){
-  alert(
-    'Nome: ' + localStorage.nome +
-    '\nEmail: ' + localStorage.email + 
-    '\nSenha: ' + localStorage.senha
-    );
+function redirect(){
+  window.location.replace("index.html");
 }
