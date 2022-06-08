@@ -49,8 +49,8 @@ body{
 }
 
 .first-paragraph{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -66,8 +66,7 @@ body{
 figure{
     display: inline-block;
     width: 300px;
-    padding-right: 20px;
-    margin-left: 30px;
+    margin: 0 5px;
 }
 figcaption{
     text-align: center;
@@ -190,7 +189,7 @@ figure img{
   }
 
 
-  /* Ajuste Mobile cards */
+  /* Ajuste Mobile Nossos Valores */
   @media(max-width: 900px){
     .services{
       display: flex;
@@ -198,35 +197,14 @@ figure img{
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-/* Fim MSV */
-
-    /* @media (min-width: 576px) {
-        .container {
-            width: 540px;
-        }
+  /* Posicionamento dos Logos 1997-2022 */
+  @media (max-width: 700px) {
+    figure{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 45px;
     }
-    @media (min-width: 768px) {
-        .container {
-            width: 720px;
-        }
+    img{
+        padding: 0;
     }
-    @media (min-width: 992px) {
-        .container {
-            width: 960px;
-        }
-    }
-    @media (min-width: 1200px) {
-        .container {
-            width: 1140px;
-        }
-    } */
+  }
