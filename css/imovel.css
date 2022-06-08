@@ -196,7 +196,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
     .product-imgs{
         display: flex;
         flex-direction: column;
