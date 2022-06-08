@@ -81,6 +81,10 @@ input.senha {
     background-image: url(../img/icone-cadeado.png);
 }
 
+input.email{
+    background-image: url(../img/email_20px\(3\).png);
+}
+
 input.submit{
     border-radius: 50px;
     color: #fff;

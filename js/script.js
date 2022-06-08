@@ -1,28 +1,52 @@
+var erros = "";
+
 function validaEmail() {
-  if (!document.fCadastro.txtEmail.value.includes("@")) {
-    alert("E-mail Inválido, Por favor Digite um e-mail Válido");
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (document.getElementById('email').value.match(validRegex)) {
+    //Email Válido
+  } else {
+    erros += "\nEmail Inválido";
   }
 }
+
+function validaSenha(){
+  if ((document.getElementById('senha').value.length) < 6){
+    erros += "\nSenha deve ter ao menos 6 Caracteres";
+  }
+}
+
+function validaNome(){
+  if ((document.getElementById('name').value.length) < 1){
+    erros += "\nCampo nome não pode ser vazio";
+  }
+}
+
 
 // Ao carregar a página verifica se está logado
 window.onload = function(){
     if(localStorage.logado === 'true'){ 
     document.getElementById('registrar').text = localStorage.email;
     document.getElementById('logar').text = "Sair";
-  }else{
-  //  alert('Não está logado')
   }
 }
 
 
-
-// Atribui os Valores do formulário ao Local Storage
+// Verifica Erros e Atribui os Valores do formulário ao Local Storage
 var cadastrar = function(){
+  erros = "";
+  validaSenha();
+  validaNome();
+  validaEmail();
+  
+  if (erros.length <= 0){
   localStorage.setItem('nome', document.getElementById('name').value);
   localStorage.setItem('email', document.getElementById('email').value);
   localStorage.setItem('senha', document.getElementById('senha').value);
   //localStorage.setItem(logado, false);
   successCadastro();
+  }else{
+    alert(erros);
+  }
 }
 
 function successCadastro(){
